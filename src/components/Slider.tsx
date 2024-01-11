@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectFade , Autoplay} from "swiper/modules";
+import { Navigation, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
-import { useEffect, useState } from "react";
 
 const data = [
   {
@@ -27,21 +26,10 @@ const data = [
 ];
 
 const Slider = () => {
-  // const [currentSlide, setCurrentSlide] = useState(0);
-
-  // useEffect(() => {
-  //   const interval = setInterval(
-  //     () =>
-  //       setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1)),
-  //     4000
-  //   );
-  //   return () => clearInterval(interval);
-  // }, []);
-
   return (
     <div>
       <Swiper
-        modules={[Navigation, EffectFade , Autoplay]}
+        modules={[Navigation, EffectFade, Autoplay]}
         effect="fade"
         spaceBetween={5}
         slidesPerView={1}
