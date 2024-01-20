@@ -25,7 +25,7 @@ const Navbar = () => {
       {/* RIGHT LINKS */}
       <div className="hidden md:flex gap-4 items-center justify-end flex-1">
         {!user ? (
-          <Link title="Login" href="/login">Login</Link>
+          <Link title="Signin" href="/api/auth/signin">Signin</Link>
         ) : (
           <Link title="Orders" href="/orders">Orders</Link>
         )}

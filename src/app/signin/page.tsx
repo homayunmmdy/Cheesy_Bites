@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const LoginPage = () => {
+const SigninPage = () => {
   return (
     <div className="p-4 h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex items-center justify-center">
       {/* BOX */}
@@ -44,4 +44,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default SigninPage;
