@@ -12,9 +12,9 @@ const WelcomeTemplate = ({ name }: { name: string }) => {
   return (
     <Html>
       <Preview>Welcome aboard!</Preview>
-      <Body>
+      <Body className="bg-white">
         <Container>
-          <Text>Hello {name}</Text>
+          <Text className="font-bold text-3xl">Hello {name}</Text>
           <Link href="https://cheesy-bites.vercel.app/">
             Cheesy Bite
           </Link>
